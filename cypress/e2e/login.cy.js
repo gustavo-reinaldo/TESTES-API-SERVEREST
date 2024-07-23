@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-describe('Login', () => {
+describe('Login - API SERVEREST', () => {
 
     it('Deve fazer login com sucesso', () => {
         cy.request({

@@ -8,7 +8,7 @@ Cypress.Commands.add('token', (email, senha) => {
         }
     }).then((response) => {
         expect(response.status).to.equal(200)
-        return response.body.authorization
+        return response.body.authorization //salvar o token de autorização do login
     })
  })
 

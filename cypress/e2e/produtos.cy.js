@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 import contrato from '../contracts/produtos.contract'
+const faker = require('faker')
 
 describe('Testes da Funcionalidade Produtos', () => {
     let token
@@ -18,7 +19,6 @@ describe('Testes da Funcionalidade Produtos', () => {
             method: 'GET',
             url: 'produtos'
         }).then((response) => {
-            //expect(response.body.produtos[9].nome).to.equal('Produto EBAC 436746')
             expect(response.status).to.equal(200)
             expect(response.body).to.have.property('produtos')
             expect(response.duration).to.be.lessThan(20)
@@ -60,7 +60,7 @@ describe('Testes da Funcionalidade Produtos', () => {
                 headers: {authorization: token}, 
                 body: 
                 {
-                    "nome": "Produto Editado 45642083",
+                    "nome": `Produto EBAC ${Math.floor(Math.random() * 100000000)}`,
                     "preco": 100,
                     "descricao": "Produto editado",
                     "quantidade": 100
