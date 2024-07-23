@@ -1,4 +1,4 @@
-# Testes API - EBAC
+# Testes API - ServeRest
 ### Exercício para os alunos de Qualidade de software da EBAC 
 
 ## Clonando e executando em sua máquina
