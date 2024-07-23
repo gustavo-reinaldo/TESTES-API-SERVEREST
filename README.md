@@ -44,6 +44,8 @@ Após abrir o dashboard, prossiga com os passos sugerido pelo Cypress.
 
 ### Bibliotecas de apoio:
 -Cypress: Framework de automação: https://cypress.io/
+-Joi: Biblioteca de validação de dados: https://www.npmjs.com/package/joi
+-Faker: Biblioteca para gerar dados: https://fakerjs.dev/guide/
 
 
 
